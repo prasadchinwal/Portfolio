@@ -53,17 +53,23 @@
             @yield('body')
         </main>
 
-        <footer class="bg-white dark:bg-gray-800 dark:text-white text-center text-sm mt-12 py-4" role="contentinfo">
-            <ul class="flex flex-col md:flex-row justify-center list-none">
-                <li class="md:mr-2">
-                    &copy; <a href="https://chinwalprasad.dev" title="Tighten website">{{ $page->siteAuthor }}</a> {{ date('Y') }}.
-                </li>
-
-                <li>
-                    Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-                    and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
-                </li>
-            </ul>
+        <footer class="bg-white dark:bg-gray-800 dark:text-white border-t-2 border-white text-center text-sm mt-12 py-4" role="contentinfo">
+            <div class="">
+                <div class="container mx-auto py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                    <p class="text-gray-800 dark:text-gray-100 text-sm text-center sm:text-left">&copy;
+                        <a href="https://chinwalprasad.dev"
+                        class="font-semibold bg-yellow-200 text-indigo-400 hover:text-indigo-600 hover:bg-yellow-300 inline=block py-1 px-2 rounded-lg m-1"
+                        target="_blank" rel="noopener noreferrer" title="Chinwal Prasad's website"
+                        > {{ $page->siteAuthor }}
+                        </a>
+                        {{ date('Y') }}.
+                    </p>
+                    <span class="sm:ml-auto sm:mt-0 mt-2 sm:w-auto w-full sm:text-left text-center text-gray-800 dark:text-gray-100 text-sm"
+                    >
+                    Built with <a href="http://jigsaw.tighten.co" class="" title="Jigsaw by Tighten">Jigsaw</a> and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+                    </span>
+                </div>
+            </div>
         </footer>
 
         <script src="{{ mix('js/main.js', 'assets/build') }}"></script>

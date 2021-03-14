@@ -1,5 +1,5 @@
 <div class="flex flex-col hover:bg-gray-100 dark:hover:text-gray-800 rounded-lg p-4 mb-4">
-    <p class="text-blue-600 font-medium my-2">
+    <p class="text-indigo-600 font-semibold my-2">
         {{ $post->getDate()->format('F j, Y') }}
     </p>
 
