@@ -19,7 +19,7 @@ Although these libraries are very popular and good, you maynot want to install a
 
 Let's get started with implementing the UI first. Here is our UI.
 
-```js{}[index.vue]
+```js
 <div id="app">
   <v-app>
     <v-content>
@@ -51,7 +51,7 @@ Let's assume that we have 2 fields in our form first name and last name. What we
 
 Let's see the Javascript code for this:
 
-```js[index.js]
+```js
 new Vue({
   el: "#app",
   vuetify: new Vuetify(),

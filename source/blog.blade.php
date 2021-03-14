@@ -8,10 +8,10 @@ pagination:
 @extends('_layouts.master')
 
 @section('body')
-    <div class="flex items-center content-center text-4xl text-blue-500 hover:text-blue-800 mx-2">
-        <svg class="fill-none w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
-        <span class="font-bold tracking-wide">Blog</span>
-    </div>
+
+    <span class="text-4xl mx-2 font-bold tracking-wide"
+        style="box-shadow:inset 0 -0.1666666667em 0 0 #1F2937, inset 0 -0.3333333333em 0 0 #818CF8"
+    >Blog</span>
 
     <hr class="border-b my-6">
 

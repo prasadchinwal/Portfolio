@@ -29,21 +29,18 @@
         @endif
     @endforeach
 
-    @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
-        <div class="flex flex-col md:flex-row md:-mx-6">
+    <div class="py-2 border-t-2 border-gray-800 dark:border-white">
+        @foreach ($posts->where('featured', false)->take(6)->chunk(2) as $row)
             @foreach ($row as $post)
-                <div class="w-full md:w-1/2 md:mx-6">
-                    @include('_components.post-preview-inline')
-                </div>
+                @include('_components.post-preview-inline')
 
                 @if (! $loop->last)
                     <hr class="block md:hidden w-full border-b mt-2 mb-6">
                 @endif
             @endforeach
-        </div>
-
-        @if (! $loop->last)
-            <hr class="w-full border-b mt-2 mb-6">
-        @endif
-    @endforeach
+            @if (! $loop->last)
+                <hr class="w-full border-b mt-2 mb-6">
+            @endif
+        @endforeach
+    </div>
 @stop

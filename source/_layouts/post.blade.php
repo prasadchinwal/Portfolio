@@ -18,6 +18,11 @@
             padding: 15px;
         }
     }
+    .markdown-body > pre > code {
+        padding-bottom: 2px;
+        padding-top: 2px;
+        border-radius: 0.5rem;
+    }
 </style>
 @endsection
 @section('body')
@@ -27,7 +32,7 @@
 
     <span class="text-2xl font-semibold leading-none mb-2">{{ $page->title }}</span>
 
-    <p class="text-gray-700 text-xl md:mt-0">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
+    <p class="text-indigo-400 text-xl md:mt-0">{{ $page->author }}  •  {{ date('F j, Y', $page->date) }}</p>
 
     @if ($page->categories)
         @foreach ($page->categories as $i => $category)
@@ -43,19 +48,25 @@
         @yield('content')
     </div>
 
-    <nav class="flex justify-between text-sm md:text-base">
+    <nav class="py-4 flex justify-between text-sm md:text-base">
         <div>
             @if ($next = $page->getNext())
-                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}">
-                    &LeftArrow; {{ $next->title }}
+                <a href="{{ $next->getUrl() }}" title="Older Post: {{ $next->title }}"
+                class="inline-flex items-center md:mb-2 lg:mb-0 bg-yellow-300 text-gray-600 hover:text-gray-800 rounded-lg py-1 px-2"
+                >
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    {{ $next->title }}
                 </a>
             @endif
         </div>
 
         <div>
             @if ($previous = $page->getPrevious())
-                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}">
-                    {{ $previous->title }} &RightArrow;
+                <a href="{{ $previous->getUrl() }}" title="Newer Post: {{ $previous->title }}"
+                    class="inline-flex items-center md:mb-2 lg:mb-0 bg-yellow-300 text-gray-600 hover:text-gray-800 rounded-lg py-1 px-2"
+                >
+                    {{ $previous->title }}
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
                 </a>
             @endif
         </div>
