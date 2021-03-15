@@ -4,7 +4,7 @@ section: content
 title: Taskbook
 date: 2020-05-23
 description: Tasks, boards & notes for the command-line habitat
-cover_image: /assets/img/post-cover-image-1.png
+cover_image: /assets/images/wall-post.svg
 categories: [tool]
 ---
 

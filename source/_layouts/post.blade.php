@@ -19,15 +19,19 @@
         }
     }
     .markdown-body > pre > code {
-        padding-bottom: 2px;
-        padding-top: 2px;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
         border-radius: 0.5rem;
     }
 </style>
 @endsection
 @section('body')
     @if ($page->cover_image)
-        <img src="{{ $page->cover_image }}" alt="{{ $page->title }} cover image" class="mb-2">
+        <img src="{{ $page->cover_image }}" title="{{ $page->title }} cover image"
+            alt="{{ $page->title }} cover image" class="w-full h-64 bg-cover bg-center mb-2"
+        >
     @endif
 
     <span class="text-2xl font-semibold leading-none mb-2">{{ $page->title }}</span>

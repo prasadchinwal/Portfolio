@@ -4,7 +4,7 @@ section: content
 title: Laravel Eloquent Introduction
 date: 2020-07-11
 description: Laravel Eloquent operations introduction
-cover_image: /assets/img/post-cover-image-2.png
+cover_image: /assets/images/wall-post.svg
 featured: true
 categories: [laravel]
 author: Chinwal Prasad
