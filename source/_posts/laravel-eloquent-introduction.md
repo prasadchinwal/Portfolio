@@ -10,8 +10,6 @@ categories: [laravel]
 author: Chinwal Prasad
 ---
 
-# Laravel Eloquent introduction
-
 Laravel eloquent is an ActiveRecord implementation to interact with database. An ActiveRecord is simply the 'M' - Model, in the MVC architecture. On Laravel documentation page Eloquent is described as Eloquent ORM (Object Relational Mapping system). To make this easy, you can think that each Model in your laravel application corresponds to a table in your database. Let's get started!
 
 ## Defining Models
@@ -146,8 +144,9 @@ $users = App\Users::find(1);
 ```
 The ```find()``` method takes one argument which is the primary key on the table and returns an instance of the ```App\User``` class with the record with ```id = 1```
 
-> Note:
->> The methods ``` first()``` and ``` find()``` return Single Models\Aggregates instead of a collection.
+> #### Note:
+>
+> The methods ``` first()``` and ``` find()``` return Single Models\Aggregates instead of a collection.
 
 ## How to insert data into database 💁‍♂️
 
@@ -171,15 +170,15 @@ The ```find()``` method takes one argument which is the primary key on the table
     ]);
 ```
 
-> Note:
->> For ```create()``` method you might want to set the ```fillable``` property on your model to avoid Mass assignment exception.
+> #### Note:
+>
+> For ```create()``` method you might want to set the ```fillable``` property on your model to avoid Mass assignment exception.
 
 ## How to update the data 💁‍♂️
 
 - By using the ``` save()``` method
 
 ```php
-
 $user = App\User::find(1);
 $user->phone = '0987654321';
 $user->save();
@@ -193,8 +192,9 @@ App\User::where('is_logged_in', true)->update([
 ]);
 ```
 
-> Note:
->> For ```update()``` method you might want to set the ```fillable``` property on your model to avoid Mass assignment exception.
+> #### Note:
+>
+> For ```update()``` method you might want to set the ```fillable``` property on your model to avoid Mass assignment exception.
 
 ## How to delete the data 😨
 

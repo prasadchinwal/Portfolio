@@ -8,12 +8,11 @@ cover_image: /assets/images/wall-post.svg
 categories: [tool]
 ---
 
-# Taskbook
 By utilizing a simple and minimal usage syntax, that requires a flat learning curve, taskbook enables you to effectively manage your tasks and notes across multiple boards from within your terminal. All data are written atomically to the storage in order to prevent corruptions, and are never shared with anyone or anything. Deleted items are automatically archived and can be inspected or restored at any moment.
 
 ## Features
 
-<ul class="p-4 grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc">
+<ul class="p-4 grid grid-cols-1 sm:grid-cols-2 gap-4 list-none">
     <li>Organize tasks & notes to boards</li>
     <li>Board & timeline views</li>
     <li>Priority & favorite mechanisms</li>
@@ -50,7 +49,7 @@ yarn global add taskbook
 tb --task Read MyBook
 ```
 
-> Note:
+> #### Note:
 >
 > You can add your task to an existing or new board
 
@@ -66,7 +65,7 @@ tb --task @books Read MyBook
 tb --note This is a note
 ```
 
-> Note:
+> #### Note:
 >
 > You can add your note to an existing or new board
 
@@ -104,7 +103,7 @@ tb --clear
 tb --delete task_id
 ```
 
-> List Of Commands:
+> #### List Of Commands:
 >
 > You can find a list of all commands for taskbook [here](https://github.com/klaussinani/taskbook#usage)
 

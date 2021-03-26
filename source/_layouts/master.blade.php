@@ -33,7 +33,9 @@
                     <a href="/" title="{{ $page->siteName }} home" class="inline-flex no-underline items-center">
                         <img class="h-8 md:h-10 mr-3" src="/assets/images/me.svg" alt="{{ $page->siteName }} logo" />
 
-                        <h1 class="text-lg md:text-2xl text-gray-800 dark:text-white font-semibold hover:text-yellow-400 my-0">{{ $page->siteName }}</h1>
+                        <h1 class="text-lg md:text-2xl text-purple-700 dark:text-purple-500 font-semibold hover:text-yellow-400 my-0">
+                            {{ $page->siteName }}
+                        </h1>
                     </a>
                 </div>
 

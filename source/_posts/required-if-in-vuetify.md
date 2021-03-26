@@ -96,8 +96,9 @@ new Vue({
 
 ```
 
-> Note:
->> Notice how we set the rules for last name field to a computed property? This allows us to implement our custom rule which is to make the last name field required only when the value of the field first name is equal to **"Prasad"**.
+> #### Note:
+>
+> Notice how we set the rules for last name field to a computed property? This allows us to implement our custom rule which is to make the last name field required only when the value of the field first name is equal to **"Prasad"**.
 
 ## Result and Codepen
 

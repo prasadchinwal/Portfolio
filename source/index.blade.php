@@ -2,13 +2,13 @@
 
 @section('body')
     <section>
-        <h1 class="font-bold text-3xl md:text-5xl tracking-tight mb-4 text-black dark:text-white">
-            Hey, I'm Prasad Chinwal
+        <h1 class="tracking-wide font-bold text-3xl md:text-5xl mb-4 text-black dark:text-white">
+            Hey, I'm Prasad Chinwal!
         </h1>
         <p class="text-gray-600 dark:text-gray-400 mb-16"">
             I’m a full stack developer and an avid gamer. I work at
             <a href="https://uis.edu" title="University of Illinois, Springfield Website" target="_blank" rel="noreferrer" class="no-underline font-semibold">
-                <span class="highlight text-yellow-700 hover:text-purple-500">University of Illinois, Springfield.</span>
+                <span class="highlight text-purple-500 hover:text-purple-700">University of Illinois, Springfield.</span>
             </a>I always look to learn and/or improve my skills.
         </p>
     </section>
@@ -31,7 +31,7 @@
                 </a>
             </h2>
 
-            <p class="mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
+            <p class="leading-relaxed mt-0 mb-4">{!! $featuredPost->getExcerpt() !!}</p>
 
             <a href="{{ $featuredPost->getUrl() }}" title="Read - {{ $featuredPost->title }}" class="uppercase mb-4 inline-block p-2 rounded-md bg-gray-600 text-white dark:hover:bg-white dark:hover:text-gray-800">
                 Read
