@@ -18,14 +18,6 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {
-      fontFamily: {
-        sans: [
-          'Nunito Sans'
-        ],
-        mono: [
-          'monospace',
-        ],
-      },
     },
   },
   variants: {

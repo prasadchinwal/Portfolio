@@ -2,9 +2,9 @@
     <div class="container p-5 mx-auto">
         <div class="-my-8 divide-y-2 divide-gray-100">
             <div class="py-8 flex flex-wrap md:flex-nowrap">
-                <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
-                    <span class="p-2 m-2 rounded-lg font-semibold tracking-widest title-font text-indigo-700">
-                        {{ implode(',', $post->categories) }}
+                <div class="text-center md:w-48 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+                    <span class="p-2 m-2 rounded-lg font-semibold tracking-normal title-font text-indigo-700">
+                        # {{ implode(',', $post->categories) }}
                     </span>
                     <span class="mt-1 text-sm">{{ $post->getDate()->format('F j, Y') }}</span>
                 </div>

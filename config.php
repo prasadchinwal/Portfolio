@@ -24,6 +24,10 @@ return [
                 });
             },
         ],
+        'books' => [
+            'author' => 'Author Name', // Default author, if not provided in a book
+            'path' => 'blog/{filename}',
+        ]
     ],
 
     // helpers
